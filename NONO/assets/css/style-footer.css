@@ -1,0 +1,45 @@
+
+footer img{
+    border-radius: 5px;
+    margin: 2px;
+    width: 90px;
+    height: 80px;
+    filter: grayscale(100%);
+    
+}
+
+.logo-footer img {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contact-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.contact-footer a {
+    color: #fff;
+    padding: 10px;
+}
+
+.contact-footer a:hover {
+    color: rgb(255, 140, 0);
+}
+
+.contact-footer img {
+    width: 250px;
+    height: 250px;
+}
+
+.footer-reference{
+    padding: 20px 0;
+    font-style: italic;
+}
+
+.footer-reference span {
+    padding: 20px 0;
+}

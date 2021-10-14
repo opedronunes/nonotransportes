@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+body #carousel img {
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+   text-decoration: none; 
+}
+
+.carousel-item img {
+    width: 100vw;
+}
+
+.carousel-caption {
+    margin-bottom: 80px;
+}
+.carousel-caption h1 {
+    font-size: 6em;
+    background: linear-gradient(180deg, #ffe700, #ff5500);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 2em;
+    text-shadow: 0 0 8px #1c1c1c;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+#equipamentos figure img {
+    box-shadow: 0 0 2px #1c1c1c;
+}
+#equipamentos figcaption {
+    color: #1c1c1c;
+    padding-bottom: 5px;
+}
+.btn {
+    width: 50%;
+    border: none;
+    border-radius: 32px;
+    background: #161923;
+    color: white;
+    font-size: 1em;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.6;
+}
+
+.btn:hover {
+    transition: all 0.3s ease;
+    opacity: 1;
+    background: linear-gradient(180deg, #ffe700, #ff5500);
+}
+
+/*
+MEDIA QUERIES
+
+480px // Extra small screen
+768px // Small screen
+992px // Medium screen
+1200px // Large screen
+1600px // Extra Large screen
+1900px // Extra Large screen
+
+*/
+/*480px // Extra small screen*/
+@media (max-width: 480px) {
+
+    body #carousel img {
+        height: auto;
+    }
+    .dropdown-item{
+        font-size: 1em;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+    h2 {
+        font-family: 'Poppins' sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        border: none;
+        border-radius: 32px;
+        background: #161923;
+        color: white;
+        font-size: 0.8em;
+        margin: 0 auto;
+        display: block;
+        opacity: 0.6;
+    }
+
+
+}
+/*768px // Small screen*/
+@media (min-width: 480.2px) and (max-width: 767.98px) {
+
+    body #carousel img {
+        height: auto;
+    }
+
+    h2 {
+        font-family: 'Poppins' sans-serif;
+        font-weight: 400;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .btn {
+        width: 80%;
+        border: none;
+        border-radius: 32px;
+        background: #161923;
+        color: white;
+        font-size: 1em;
+        margin: 0 auto;
+        display: block;
+        opacity: 0.6;
+    }
+    
+    .carousel-caption {
+        margin-bottom: 20px;
+    }
+    .carousel-caption h1 {
+        font-size: 2.7em;
+        background: linear-gradient(180deg, #ffe700, #ff5500);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 700;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8em;
+        text-shadow: 0 0 8px #1c1c1c;
+        font-weight: 400;
+    }
+
+}
+
+/*992px // Medium screen*/
+@media (min-width: 768px) and (max-width:991.98px) {
+    body #carousel img {
+        height: auto;
+    }
+
+    .carousel-caption {
+        margin-bottom: 40px;
+    }
+    .carousel-caption h1 {
+        font-size: 3.4em;
+        background: linear-gradient(180deg, #ffe700, #ff5500);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 700;
+    }
+    
+    .carousel-caption p {
+        font-size: 1.2em;
+        text-shadow: 0 0 8px #1c1c1c;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-family: 'Poppins' sans-serif;
+        font-weight: 400;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .btn {
+        width: 50%;
+        border: none;
+        border-radius: 32px;
+        background: #161923;
+        color: white;
+        font-size: 1em;
+        margin: 0 auto;
+        display: block;
+        opacity: 0.6;
+    }
+    
+}
+
+/*1200px // Large screen*/
+@media (min-width: 992px) and (max-width:1200px) {
+    body #carousel img {
+        height: auto;
+    }
+
+    .carousel-caption {
+        margin-bottom: 60px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 4.5em;
+        background: linear-gradient(180deg, #ffe700, #ff5500);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 700;
+    }
+
+    .carousel-caption p {
+        font-size: 1.6em;
+        text-shadow: 0 0 8px #1c1c1c;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-family: 'Poppins' sans-serif;
+        font-weight: 400;
+        font-size: 2em;
+        text-align: center;
+    }
+}
