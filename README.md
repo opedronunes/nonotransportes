@@ -6,7 +6,7 @@ Projeto criado para uma empresa no ramo de locação de equipamentos e serviços
 🚀 Projeto finalizado e Cliente satisfeito. ABAIXO LINK PARA VISUALIZAR RESULTADO FINAL DO PROJETO ↓
 
 <div>
-  <a href="https://nonotransporteselocacoes.com.br/" target="_blank")>:link:→Site</a>
+  <a href="https://nonotransporteselocacoes.com.br/" target="blank")>:link:→Site</a>
 </div>
 
 # Tecnologias utilizadas no projeto
