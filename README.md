@@ -5,7 +5,7 @@ Projeto criado para uma empresa no ramo de locação de equipamentos e serviços
 
 🚀 Cliente satisfeito com resultado. ABAIXO LINK PARA VISUALIZAR RESULTADO FINAL DO PROJETO ↓
 
-[Link do projeto](target="blank" https://nonotransporteselocacoes.com.br/)
+[Site](https://nonotransporteselocacoes.com.br/)
 
 # Tecnologias utilizadas no projeto
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
