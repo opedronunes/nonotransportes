@@ -3,9 +3,9 @@ Projeto criado para uma empresa no ramo de locação de equipamentos e serviços
 
 ![Index](https://user-images.githubusercontent.com/81447137/137406478-2ad35460-6d14-4d31-b2c9-96d51b9a8ee1.jpg)
 
-🚀 Em construção...  🚧
+🚀 Cliente satisfeito com resultado. ABAIXO LINK PARA VISUALIZAR RESULTADO FINAL DO PROJETO ↓
 
-[Link do projeto](https://nono-transportes.netlify.app/)
+[Link do projeto](target="blank" https://nonotransporteselocacoes.com.br/)
 
 # Tecnologias utilizadas no projeto
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -18,13 +18,8 @@ Projeto criado para uma empresa no ramo de locação de equipamentos e serviços
 
 # 	:hammer_and_wrench: Feautures
 
-- [x] Lyout
-- [x] Responsividade - todos os tamanhos de dispositivos
 - [ ] Criação de Formulário para cadastro de clientes
-- [ ] Formulário para orçamentos
 - [ ] Conexão com Banco de Dados
-- [ ] Tratamento das imagens para a galeria (Photoshop)
-- [ ] Criação do Protfólio/Galeria dos equipamentos disponíveis
 
 ##
 Outros prints:
