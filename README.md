@@ -3,9 +3,11 @@ Projeto criado para uma empresa no ramo de locação de equipamentos e serviços
 
 ![Index](https://user-images.githubusercontent.com/81447137/137406478-2ad35460-6d14-4d31-b2c9-96d51b9a8ee1.jpg)
 
-🚀 Cliente satisfeito com resultado. ABAIXO LINK PARA VISUALIZAR RESULTADO FINAL DO PROJETO ↓
+🚀 Projeto finalizado e Cliente satisfeito. ABAIXO LINK PARA VISUALIZAR RESULTADO FINAL DO PROJETO ↓
 
-[Site](https://nonotransporteselocacoes.com.br/)
+<div>
+  <a href="https://nonotransporteselocacoes.com.br/" target="_blank")>:link:→Site</a>
+</div>
 
 # Tecnologias utilizadas no projeto
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
