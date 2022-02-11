@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Nonô transportes, Locação de retroescavadeira, caminhão plataforma, carreta prancha.">
+    <meta property="og:description" content="Nonô Transportes">
+    <meta property="og:type" content="website">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60GJ8990XD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60GJ8990XD');
+    </script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link rel="shortcut icon" href="/assets/img/icon.jpg" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="/content/logo&icons/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style-body.css">
-    
+    <link rel="stylesheet" href="/plugins/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/plugins/OwlCarousel/dist/assets/owl.theme.default.min.css">
+
     <title>Nonô Transportes e Serviços</title>
   </head>
   <body>
-
     <!-- NAVEGAÇÃO MENU -->
     <header id="header">
       <a id="logo" href="index.html">
-        <img src="/assets/img/nono.png" alt="Logo empresa">
+        <img src="/content/logo&icons/logo.png" alt="Logo Nonô transportes">
       </a>
       <nav id="nav">
         <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
@@ -29,146 +41,143 @@
         </button>
 
         <ul id="menu" role="menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <!-- SERVICES -->
-          <li class=" dropdown">
-            <a class="dropdown-toggle" href="#servicos" id="dropdownservico" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownservico">
-              <li><a class="dropdown-item" href="#servicos">Transportes de máquinas e equipamentos</a></li>
-              <li><a class="dropdown-item" href="#servicos">Transportes especiais e remoção</a></li>
-              <li><a class="dropdown-item" href="#servicos">Terraplanagem</a></li>
-              <li><a class="dropdown-item" href="#servicos">Escavação</a></li>
-              <li><a class="dropdown-item" href="#servicos">Aterro e demolição</a></li>
-            </ul>
-          </li>
-          <!-- LOCATION -->
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="#" id="dropdownlocacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locação</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownlocacao">
-              <li><a class="dropdown-item" href="#equipamentos">Caminhão Munck</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Caminhão Plataforma</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Caminhão Pipa</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Guindastes 25TN, 30TN, 60TN, 70TN e 80TN</a></li>
-              <li><a class="dropdown-item" href="#equipamentos"> Carreta Carga Seca</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Carreta Prancha 03 Eixos</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Carreta Prancha 04 Eixos</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Pá Carregadeira</a></li>
-              <li><a class="dropdown-item" href="#equipamentos">Retro Escavadereira com / Sem Rompedor</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Orçamento</a></li>
-          <!-- CONTATS -->
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="" id="dropdown_contacts" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contatos</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown_contacts">
-              <li><a class="dropdown-item" target="blank" href=""><i class="fab fa-whatsapp"></i> (61)3354-7090</a></li>
-              <li><a class="dropdown-item" target="blank" href=""><i class="fab fa-whatsapp"></i> (61)99988-3184</a></li>
-              <li><a class="dropdown-item" target="blank" href=""><i class="fab fa-whatsapp"></i> (61)99153-8990</a></li>
-              <li><a class="dropdown-item" target="blank" href=""><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a></li>
-              <li><a class="dropdown-item" target="blank" href="https://instagram.com/nonotransportes.rental?utm_medium=copy_link"><i class="fab fa-instagram"> </i> Siga-nos</a></li>
-            </ul>
-          </li>
+          <li><a href="#servicos">Serviços</a></li>
+          <!-- EQUIPAMENTS -->
+          <li><a href="#equipamentos">Equipamentos</a></li>
+          <!-- BUDGET -->
+          <li><a href="#orcamento">Orçamento</a></li>
+          <!-- CONTACTS -->
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
     </header>
-
     <!-- CAROUSEL -->
     <section id="carousel">
-    <div id="carousel_header" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="8000">
-          <img src="/assets/img/frotas1200x720.jpg" class="d-block" alt="2544 Prancha 04 eixos">
-          <div class="carousel-caption">
-            <h1 class="text_carousel">Nonô Transportes</h1>
-            <p class="text_carousel">Qualidade em atendimento e prestação de Serviços!</p>
+      <div id="carousel_header" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="/content/images/2021/carousel/munckefh540-01.jpg" class="d-block" alt="Munck e FH540">
+            <div class="carousel-caption">
+              <h1>Diferencial</h1>
+              <p>Qualidade em atendimento e prestação de Serviços!</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="8000">
-          <img src="/assets/img/2544-P03eixos1200x720.jpg" class="d-block" alt="p03eixos">
-          <div class="carousel-caption">
-            <h1>Nonô Transportes</h1>
-            <p>Qualidade em atendimento e prestação de Serviços!</p>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="/content/images/2021/carousel/2544-P03eixos-02.jpg" class="d-block" alt="p03eixos">
+            <div class="carousel-caption">
+              <h1>Sempre a frente</h1>
+              <p>Com frotas e equipamentos prontos para te atender!</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="8000">
-          <img src="/assets/img/fh540-25441200x720.jpg" class="d-block" alt="Munck Luna 45">
-          <div class="carousel-caption">
-            <h1>Sempre a frente</h1>
-            <p>Com frotas e equipamentos prontos para te atender!</p>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="/content/images/2021/carousel/volvof540-04.jpg" class="d-block" alt="Volvo FH540">
+            <div class="carousel-caption">
+              <h1>Transparência</h1>
+              <p>É nosso dever cultivar as boas práticas e relações saudáveis.</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="8000">
-          <img src="/assets/img/02RETRO1200x720.jpg" class="d-block" alt="Munck Luna 45">
-          <div class="carousel-caption">
-            <h1>Sempre a frente</h1>
-            <p>Com frotas e equipamentos prontos para te atender!</p>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="/content/images/2021/carousel/02RETRO-03.jpg" class="d-block" alt="Munck Luna 45">
+            <div class="carousel-caption">
+              <h1>Nossa missão</h1>
+              <p>Ser referêcia na prestação de serviços e locação de equipamentos!</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- BUTTON RETURN TO TOP -->
+    <button onclick="topFunction()" id="btnToTop" title="Go to top">
+      <i class="fas fa-long-arrow-alt-up"></i>
+    </button>
+    <!-- LOGO CLIENTS -->
+    <section class="client">
+      <div class="container">
+        <h2>Parceiros</h2>
+        <div class="owl-carousel owl-theme">
+          <div><img src="/content/images/CLIENT-LOGO/ma3-200x140.jpg" alt="Logo Ma3"></div>
+          <div><img src="/content/images/CLIENT-LOGO/rusch-200x140.jpg" alt="Logo Rusch"></div>
+          <div><img src="/content/images/CLIENT-LOGO/polimix-200x140.jpg" alt="Logo Polimix"></div>
+          <div><img src="/content/images/CLIENT-LOGO/votorantim-200x140.jpg" alt="Logo Votorantim"></div>
+          <div><img src="/content/images/CLIENT-LOGO/mrv 200x140.jpg" alt="Logo MRV engenharia"></div>
+          <div><img src="/content/images/CLIENT-LOGO/brasif-200x140.jpg" alt="Logo Brasif"></div>
+          <div><img src="/content/images/CLIENT-LOGO/bsbrental-200x140.jpg" alt="Logo BSBrental"></div>
+          <div><img src="/content/images/CLIENT-LOGO/casteloforte-200x140.jpg" alt="Logo Castelo Forte"></div>
+          <div><img src="/content/images/CLIENT-LOGO/ciplan-200x140.jpg" alt="Logo Ciplan"></div>
+          <div><img src="/content/images/CLIENT-LOGO/concrecon-200x140.png" alt="Logo Concrecon"></div>
+          <div><img src="/content/images/CLIENT-LOGO/feijaozinho-200x140.jpg" alt="Logo Feijãozinho"></div>
+          <div><img src="/content/images/CLIENT-LOGO/fundex-200x140.jpg" alt="Logo fundex"></div>
+          <div><img src="/content/images/CLIENT-LOGO/geo_entulhos-200x140.jpg" alt="Logo Geo Entulhs"></div>
+          <div><img src="/content/images/CLIENT-LOGO/megarental-200x140.jpg" alt="Logo Mega Rental"></div>
+          <div><img src="/content/images/CLIENT-LOGO/rental_max-200x140.jpg" alt="Logo Rental Max"></div>
+          <div><img src="/content/images/CLIENT-LOGO/solotrat-200x140.jpg" alt="Logo Solotrat"></div>
+          <div><img src="/content/images/CLIENT-LOGO/sonda_engenharia-200x140.jpg" alt="Logo Sonda Engenharia"></div>
+          <div><img src="/content/images/CLIENT-LOGO/transdata-200x140.jpg" alt="Logo Transdata"></div>
+        </div>
+      </div>
     </section>
     <!-- SERVIÇOS-->
     <section id="servicos">
-    <div class="container mt-2 section_content">
-      <h2>Tipos de Serviços que prestamos</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 section_content">
-            <img src="/assets/img/15180-re05.jpg" class="card-img-top" alt="/assets/img/15180-re05.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Transporte de máquinas e equipamentos</h5>
-              <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
-                    território nacional.</p>
+      <div class="container">
+        <h2>O que fazemos?</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="/content/images/2021/servico-01.jpg" class="card-img-top" alt="Plataforma e 2544">
+              <div class="card-body">
+                <h4 class="card-title">Transporte de máquinas e equipamentos</h4>
+                <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
+                      território nacional.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 section_content">
-            <img src="/assets/img/15180-re05.jpg" class="card-img-top" alt="/assets/img/15180-re05.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Transportes especiais e remoção</h5>
-              <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
-                    território nacional.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/content/images/2021/servico-02.jpg" class="card-img-top" alt="Remoção de tanque">
+              <div class="card-body">
+                <h4 class="card-title">Transportes especiais e remoção</h4>
+                <p class="card-text">Estamos dispostos a novos desafios, atendendo da melhor forma a necessidade dos nossos clientes.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 section_content">
-            <img src="/assets/img/15180-re05.jpg" class="card-img-top" alt="/assets/img/15180-re05.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Terraplanagem</h5>
-              <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
-                território nacional.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/content/images/2021/servico-03.jpg" class="card-img-top" alt="Pá carregadeira">
+              <div class="card-body">
+                <h4 class="card-title">Terraplanagem</h4>
+                <p class="card-text">Consiste na colocação ou retirada de terra para deixar um terreno plano.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 section_content">
-            <img src="/assets/img/15180-re05.jpg" class="card-img-top" alt="/assets/img/15180-re05.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Escavação</h5>
-              <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
-                    território nacional.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/content/images/2021/servico-04.jpg" class="card-img-top" alt="Retroescavadeira">
+              <div class="card-body">
+                <h4 class="card-title">Escavação</h4>
+                <p class="card-text">Trabalho de remoção ou de desobstrução de terras para alterar um terreno.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 section_content">
-            <img src="/assets/img/15180-re05.jpg" class="card-img-top" alt="/assets/img/15180-re05.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Aterro e demolição</h5>
-              <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
-                    território nacional.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/content/images/2021/servico-05.jpg" class="card-img-top" alt="Retroescavaderia demolindo">
+              <div class="card-body">
+                <h4 class="card-title">Aterro e demolição</h4>
+                <p class="card-text">Colocação de terra ou entulho para nivelar uma superfície irregular. E trabalhamos 
+                  com demolição mecânica.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 section_content">
-            <img src="/assets/img/15180-re05.jpg" class="card-img-top" alt="/assets/img/15180-re05.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Aterro e demolição</h5>
-              <p class="card-text">Transportamos os mais diversos tipos de equipamento e máquinas em todo o 
-                    território nacional.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/content/images/2021/servico-06.jpg" class="card-img-top" alt="Remoção de tanque e guindalto">
+              <div class="card-body">
+                <h4 class="card-title">Içamento de materiais diversos</h4>
+                <p class="card-text">Atendemos a todo tipo de serviço para içamento e carregamento e transporte de materiais diversos.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -176,105 +185,333 @@
     </section>
     <!-- EQUIPAMENTOS-->
     <section id="equipamentos" >
-    <div class="container mt-2 section_content">
-      <div class="row">
-        <h2>Equipametos disponíveis</h2>
-        <figure class="figure col-md-4 section_content">
-          <img src="/assets/img/re08-re071200x720.jpg" class="figure-img img-fluid rounded" alt="">
-          <figcaption class="figure-caption text-end">Temos 05 Retro Escavadeiras e 01 Pá carregadeira</figcaption>
-        </figure>
-        <figure class="figure col-md-4 section_content">
-          <img src="/assets/img/2540 MB1200x720.jpg" class="figure-img img-fluid rounded" alt="">
-          <figcaption class="figure-caption text-end">Contamos com caminhão munk Mercedes 2540 com munck Argo 47</figcaption>
-        </figure>
-        <figure class="figure col-md-4 section_content">
-          <img src="/assets/img/munck4502VM1200x720.jpg" class="figure-img img-fluid rounded" alt="">
-          <figcaption class="figure-caption text-end">Volvo 270 com munck luna 45.</figcaption>
-        </figure>
-        <figure class="figure col-md-4 section_content">
-          <img src="/assets/img/2544-PRANCHA 04EIXOS1200x720.jpg" class="figure-img img-fluid rounded" alt="">
-          <figcaption class="figure-caption text-end">Contamos com carreta e prancha 04 eixos e 03 eixos</figcaption>
-        </figure>
-        <figure class="figure col-md-4 section_content">
-          <img src="/assets/img/Volvo mv270.jpg" class="figure-img img-fluid rounded" alt="">
-          <figcaption class="figure-caption text-end">Caminhão plataforma Volvo Vm 270</figcaption>
-        </figure>
-        <figure class="figure col-md-4 section_content">
-          <img src="/assets/img/Caminhão plataforma15-180.jpg" class="figure-img img-fluid rounded" alt="">
-          <figcaption class="figure-caption text-end">Camiminhão plataforma VW 15-180</figcaption>
-        </figure>
-      </div>
-      <div class="btn-equipaments">
-        <a href="/pages/galery.html" class="btn">Ver mais na galeria</a>
-      </div>
-    </div>
-    </section>
-    <!-- LOCALIZAÇÃO -->
-    <section id="localizacao" class="map section_content">
-        <div class="container mt-2 mb-2">
-          <div class="row">
-            <h2>Visite nosso pátio</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.3138219601337!2d-48.011290384983674!3d-15.787398126989167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33e65e04a6f1%3A0x5187fba43e3cb9cc!2sNono%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1632763147135!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="container">
+        <h2>Portfólio</h2>
+        <div class="row">
+          <!-- RETROESCAVADEIRAS -->
+          <div class="col">
+            <h4 class="gradient">Retroescavadeiras</h4>
+            <p>
+              Nosso portfólio é composto por 06 Retroescavadeira JCB 3CX. O equipamento é líder de mercado 
+              em 74 países, ou seja, um conjunto perfeito aliando o baixo custo de propriedade e força superior
+              como padrão.
+            </p>
+            <p>
+              Completando o conjunto, nossa Pá carregadeira WA200-6 KOMATSU faz a diferença com sua alta produtividade
+              e baixo consumo de combustível. E também nosso mais novo equipamento é a Escavadeira hidráulica JCB JS220LC, 
+              possuindo o peso operacional de 22 toneladas, foi desenvolvida para apresentar força, produtividade, eficiência, 
+              segurança e facilidade de manutenção.
+            </p>
+            <div class="logo-equipaments">
+              <img src="/content/logo&icons/JCB200X140.jpg" alt="">
+              <img src="/content/logo&icons/KOMATSU200X140.jpg" alt="">
+            </div>
+            <small class="gradient">Arraste para o lado →</small>
+            <div class="owl-carousel">
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/Escavadeirajcb220.jpg" alt="Foto de Escavadeira hidráulica">
+                  <figcaption>Escavadeira hidráulica JCB JS220LC</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/pc-001.jpg" alt="Foto de retroescavadeira">
+                  <figcaption>Pá carregadeira WA200-6 KOMATSU</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/re-002.jpg" alt="Foto de retroescavadeira">
+                  <figcaption>Retroescavadeira JCB 3CX 4X4 - RE02</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/re-003.jpg" alt="Foto de retroescavadeira">
+                  <figcaption>Retroescavadeira JCB 3CX 4X4 - RE03</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/re-004.jpg" alt="Foto de Retroescavadeira ">
+                  <figcaption>Retroescavadeira JCB 3CX 4X4 - RE04</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/re-005.jpg" alt="Foto de Retroescavadeira ">
+                  <figcaption>Retroescavadeira JCB 3CX 4X4 - RE05</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/re-006.jpg" alt="Foto de Retroescavadeira ">
+                  <figcaption>Retroescavadeira JCB 3CX 4X4 - RE06</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/RetroePa/re-008.jpg" alt="Foto de Retroescavadeira ">
+                  <figcaption>Retroescavadeira CASE 580N 4X2 - RE08</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- CAMINHÕES MUNCK -->
+          <div class="col">
+
+            <h4 class="gradient">Caminhões munck</h4>
+            <p>
+              Caminhão munck ou caminhão com guindauto é um equipamento com o objetivo de içar
+              qualquer tipo de material suportado pelo mesmo, carregar, transportar e descarregar
+              com facilidade e agilidade.
+            </p>
+            <div class="logo-equipaments">
+              <img src="/content/logo&icons/LUNAALG200X140.jpg" alt="">
+              <img src="/content/logo&icons/IMAP200X140.jpg" alt="">
+              <img src="/content/logo&icons/VOLVO200X140.jpg" alt="">
+              <img src="/content/logo&icons/FORD200X140.jpg" alt="">
+            </div>
+            <small class="gradient">Arraste para o lado →</small>
+            <div class="owl-carousel">
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Muncks/munck-001.jpg" alt="Foto Caminhão Munck">
+                  <figcaption>Ford Cargo 2422 CN e Munck Argo AGI 43</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Muncks/munck-002.jpg" alt="Foto Caminhão Munck">
+                  <figcaption>M. Benz / Axor 2540 e Munck luna 47</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Muncks/munck-003.jpg" alt="Foto Caminhão Munck">
+                  <figcaption>Ford Cargo 2422 e Munck Luna 47</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Muncks/munck-004.jpg" alt="Foto Caminhão Munck">
+                  <figcaption>Volvo VM 270 6X4R e Munck Luna 45</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Muncks/munck-006.jpg" alt="Foto Caminhão Munck">
+                  <figcaption>Ford Cargo 2422 CN e Munck Imap IM55</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- PLATAFORMAS -->
+          <div class="col">
+            
+            <h4 class="gradient">Plataformas</h4>
+            <p>
+              Esse equipamento tem várias características que o definem como caminhão plataforma
+              guincho, podem oferecer variadas capacidades de cargas de acordo com a necessidade das 
+              operações. Com nossos dois caminhões guincho podemos mobilizar os nossos equipamentos
+              com segurança, eficiência e confiabilidade.
+            </p>
+            <div class="logo-equipaments">
+              <img src="/content/logo&icons/WOLKS200X140.jpg" alt="">
+              <img src="/content/logo&icons/VOLVO200X140.jpg" alt="">
+            </div>
+            <small class="gradient">Arraste para o lado →</small>
+            <div class="owl-carousel">
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Plataformas/pt-001.jpg" alt="Foto de caminhão plataforma carregado">
+                  <figcaption>Volkswagen 15-180 CNM</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Plataformas/pt-002.jpg" alt="Foto de caminhão plataforma carregado">
+                  <figcaption>Volkswagen 15-180 CNM</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Plataformas/pt-003.jpg" alt="Foto de caminhão plataforma carregado">
+                  <figcaption>Volkswagen 15-180 CNM</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Plataformas/pt-004.jpg" alt="Foto de caminhão plataforma carregado">
+                  <figcaption>Volvo VM 270 8X2R</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Plataformas/pt-005.jpg" alt="Foto de caminhão plataforma carregado">
+                  <figcaption>Volvo VM 270 8X2R</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Plataformas/pt-006.jpg" alt="Foto de caminhão plataforma carregado">
+                  <figcaption>Volvo VM 270 8X2R</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- PRANCHAS -->
+          <div class="col">
+            <h4 class="gradient">Carretas Prancha</h4>
+            <p>
+              Diferente dos caminhões guincho, a principal característica das carretas prancha
+              é transportar equipamentos e materiais pesados de grande porte. Em nosso portfólio,
+              temos dois cavalo (cabine), uma prancha 03 eixos, uma prancha 04 eixos, uma prancha
+              rebaixada e duas carreta carga seca.
+            </p>
+            <div class="logo-equipaments">
+              <img src="/content/logo&icons/VOLVO200X140.jpg" alt="">
+              <img src="/content/logo&icons/MERCEDES200X140.jpg" alt="">
+            </div>
+            <small class="gradient">Arraste para o lado →</small>
+            <div class="owl-carousel">
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Pranchas/cavalo-001.jpg" alt="Foto de carreta e prancha">
+                  <figcaption>M. Benz / Axor 2544 S</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Pranchas/cavalo-002.jpg" alt="Foto de carreta e prancha">
+                  <figcaption>M. Benz / Axor 2544 S</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Pranchas/cavalo-003.jpg" alt="Foto de carreta e prancha">
+                  <figcaption>M. Benz / Axor 2544 S</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Pranchas/cavalo-004.jpg" alt="Foto de carreta e prancha">
+                  <figcaption>Volvo FH 540 6X4T</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="/content/images/2021/portfolio/Pranchas/cavalo-006.jpg" alt="Foto de carreta e prancha">
+                  <figcaption>Volvo FH 540 6X4T</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao">
+        <div class="container">
+          <h2>Visite nosso pátio</h2>
+          <div class="row">
+            <div class="col endereco">
+              <h4>Endereço:</h4>
+              <p>Rua 3c Chácara 128 Lotes 01, 02 e 03 - Colônia Agrícola Vicente Pires</p>
+              <p>CEP: 72.005-515</p>
+            </div>
+            <div class="col">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.3138219601374!2d-48.01129038509281!3d-15.787398126988965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33e65e04a6f1%3A0x5187fba43e3cb9cc!2sNono%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1642085767759!5m2!1spt-BR!2sbr" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- FORMULÁRIO -->
+    <section id="orcamento">
+      <div class="container">
+        <form class="row" action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="4197bd2f-0626-45e5-aaf1-40b4a32ccff7">
+          <input type="hidden" name="redirectTo" value="https://nono-transportes.netlify.app/content/pages/send-form">
+          <h4>Solicite um orçamento!</h4>
+          <small>OBS.: Os itens com asteríscos são de preenchimento obrigatório.</small>
+          <div class="col-md-6">
+            <label class="form-label" for="name">Nome e sobrenome: *</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Nome e sobrenome" required>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" for="email">E-mail: *</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="ex: example@example.com" required>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" for="cell">Celular: *</label>
+            <input class="form-control" type="tel" name="phone" id="cell" placeholder="(00) 0 0000-0000" required>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" for="option">Orçamento para: *</label>
+            <select class="form-select" name="subject" id="option" required>
+              <option value="Locação mensal">Locação mensal de equipamentos</option>
+              <option value="Diária">Locação diária</option>
+              <option value="Retroescacadeira">Locação de retroescavadeira</option>
+              <option value="Transporte">Locação de caminhão plataforma ou prancha para transporte</option>
+              <option value="Munck">Locação de munck</option>
+              <option value="Guindaste">Locação de guindastes</option>
+              <option value="Remoção">Equipe de remoção</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="description">Descreva o que precisa:</label>
+            <textarea class="form-control" name="message" id="description"></textarea>
+          </div>
+          <input type="text" name="honeypot" style="display: none;">
+          <div>
+            <button id="envio" class="btn" name="enviar" type="submit">Solicitar orçamento</button>
+          </div>     
+        </form>
+      </div>
     </section>
     <!-- FOOTER -->
     <footer class="text-center text-muted">
-
       <div class="logo-footer">
-        <img class="img-fluid" src="/assets/img/nono.png" alt="">
+        <img src="/content/logo&icons/nono.png" alt="Logo Nonô">
       </div>
-
-      <div class="footer-content">
-        <div class="contact-footer">
-
+      <div class="container">
+        <!-- CONTACTS -->
+        <div id="contact" class="contact-footer">
           <div class="row">
             <div class="col contact-footer-itens">
-              <a target="blank" href=""><i class="fab fa-whatsapp"></i> (61)3354-7090</a>
-              <a target="blank" href=""><i class="fab fa-whatsapp"></i> (61)99988-3184</a>
-              <a target="blank" target="blank" href=""><i class="fab fa-whatsapp"></i> (61)99153-8990</a>
-              <a target="blank" href=""><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a>
+              <a target="blank" href="https://wa.me/message/IB4OWSY7HO5XI1"><i class="fab fa-whatsapp"></i> (61)99988-3184</a>
+              <a target="blank" href="https://wa.me/qr/JBHPSM3SNVTRN1"><i class="fab fa-whatsapp"></i> (61)99153-8990</a>
+              <a target="blank" href="https://wa.me/message/QVFKFR6ESFPLH1"><i class="fab fa-whatsapp"></i> (61)3354-7090</a>
+              <a target="blank" href="mailto:nono.transportes@hotmail.com?subject=Orçamento para"><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a>
             </div>
             <div class="col qrcode-insta">
               <a target="blank" href="https://instagram.com/nonotransportes.rental?utm_medium=copy_link"><i class="fab fa-instagram"></i> Siga-nos</a>
-              <img class ="qrcode" src="/assets/img/frame.png" alt="">
+              <img class ="qrcode" src="/content/logo&icons/frame.png" alt="QR code instagram">
             </div>
-          </div>
-          
-        </div>
-    
-        <div class="client">
-            <h2>Nossos Clientes</h2>
-          <div>
-            <img src="/assets/img/CLIENT-LOGO/131.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/brasif-200x140.jpg">
-            <img src="/assets/img/CLIENT-LOGO/bsbrental-200x140.jpg">
-            <img src="/assets/img/CLIENT-LOGO/casteloforte-200x140.jpg">
-            <img src="/assets/img/CLIENT-LOGO/ciplan-200x140.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/concrecon-200x140.png" alt="">
-            <img src="/assets/img/CLIENT-LOGO/feijaozinho-200x140.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/fundex-200x140.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/geo_entulhos-200x140.jpg">
-            <img src="/assets/img/CLIENT-LOGO/megarental-200x140.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/rental_max-200x140.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/solotrat-200x140.jpg" alt="">
-            <img src="/assets/img/CLIENT-LOGO/sonda_engenharia-200x140.jpg">
-            <img src="/assets/img/CLIENT-LOGO/transdata-200x140.jpg" alt="">
           </div>
         </div>
       </div>
-
-   
-
-    <div class="footer-reference">
-      <span>
-        &copyNonô Transportes e serviços LTDA - 2021 | Criado por <a target="blank" href="https://github.com/PedroNunes-Dev">Pedro Nunes - Dev</a>
-      </span>
-    </div>
+      <!-- REFERENCE -->
+      <div class="footer-reference">
+        <span>
+          &copy;Nonô Transportes e serviços LTDA - CNPJ: 24.934.291/0001-53 | Criation and development <a target="blank" href="https://github.com/PedroNunes-Dev"><img src="/content/logo&icons/logoPN.png" alt="Logo Pedro Nunes-Dev"></a>
+        </span>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="/assets/js/scrollreveal.js"></script>
+    <script src="/plugins/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="/assets/js/owl-carousel.js"></script>
     <script src="/assets/js/btnMobile.js"></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>
