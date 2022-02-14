@@ -327,6 +327,13 @@ h2
     justify-content: center;
 }
 
+iframe
+{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px #8d8d8d;
+}
+
 .btn 
 {
     border: none;
@@ -471,7 +478,7 @@ footer h2
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 10px 0;
 }
 
 .contact-footer-itens
@@ -504,7 +511,8 @@ i
 {
     width: 200px;
     height: 200px;
-    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px #8d8d8d;
 }
 
 .footer-reference
