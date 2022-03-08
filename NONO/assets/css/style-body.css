@@ -67,6 +67,12 @@ MENU BUTTON
     line-height: 70px;
 }
 
+#menu li.active a
+{
+    color: #ff5500;
+    transition: .2s;
+}
+
 #btn-mobile
 {
     display: none;
