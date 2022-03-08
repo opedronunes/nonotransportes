@@ -436,9 +436,10 @@
     <!-- FORMULÁRIO -->
     <section id="orcamento">
       <div class="container">
-        <form class="row" action="https://api.staticforms.xyz/submit" method="post">
-          <input type="hidden" name="accessKey" value="4197bd2f-0626-45e5-aaf1-40b4a32ccff7">
-          <input type="hidden" name="redirectTo" value="https://nono-transportes.netlify.app/content/pages/send-form">
+        <!-- https://api.staticforms.xyz/submit - action -->
+        <form class="row" action="/app/Communication/Email.php" method="post">
+          <!-- <input type="hidden" name="accessKey" value="4197bd2f-0626-45e5-aaf1-40b4a32ccff7">
+          <input type="hidden" name="redirectTo" value="https://nono-transportes.netlify.app/content/pages/send-form"> -->
           <h4>Solicite um orçamento!</h4>
           <small>OBS.: Os itens com asteríscos são de preenchimento obrigatório.</small>
           <div class="col-md-6">
@@ -473,9 +474,10 @@
             <label class="form-label" for="description">Descreva o que precisa:</label>
             <textarea class="form-control" name="message" id="description"></textarea>
           </div>
-          <input type="text" name="honeypot" style="display: none;">
+          <!-- <input type="text" name="honeypot" style="display: none;"> -->
           <div>
-            <button id="envio" class="btn" name="enviar" type="submit">Solicitar orçamento</button>
+            <button id="envio" class="btn" type="submit">Solicitar orçamento</button>
+            <!-- name="enviar" -->
           </div>     
         </form>
       </div>
