@@ -67,7 +67,5 @@ try {
 
 } catch (Exception $e) {
     echo "Mensagem não foi enviada! → Mailer Error: {$mail->ErrorInfo}";
-    echo "<meta http-equiv='refresh' content='0;URL=../content/pages/send-form.html'>";
+    echo "<meta http-equiv='refresh' content='0;URL=../content/pages/send-form-error.html'>";
 }
-
-?>
