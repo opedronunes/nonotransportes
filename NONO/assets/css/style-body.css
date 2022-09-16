@@ -12,6 +12,10 @@ RESET
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
 a 
 {
    text-decoration: none; 
@@ -178,6 +182,27 @@ MENU BUTTON
 /*************************
 RESET BOOTSTRAP
 **************************/
+#services{
+    display: grid;
+    grid-gap: 10px;
+}
+#card-service{
+    
+    padding: 6px;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+.card-content{
+    text-align: center;
+    color: var(--color-gray1);
+}
+#card-service img{
+    border-radius: .6rem .6rem 3px 3px;
+}
+.card-content p{
+    color: var(--color-gray2);
+}
+
 .card-body
 {
     text-align: center;
@@ -618,6 +643,8 @@ MEDIA QUERIES
 
 /*1200px // Large screen*/
 @media (min-width: 992px) and (max-width:1200px) {
+
+
     body #carousel img {
         height: auto;
     }
@@ -633,5 +660,17 @@ MEDIA QUERIES
     h2 
     {
         font-size: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+    #services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (min-width: 900px) {
+    #services{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
