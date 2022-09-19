@@ -240,7 +240,7 @@ h2
     text-transform: uppercase;
     font-size: 2.1em;
     text-align: center;
-    border-bottom: 3px solid;
+    border-bottom: 1px solid;
     border-image: -webkit-linear-gradient(70deg, #ffe700 40%, #ff5500);
     border-image: -moz-linear-gradient(70deg, #ffe700 40%, #ff5500);
     border-image: linear-gradient(70deg, #ffe700 40%, #ff5500);
