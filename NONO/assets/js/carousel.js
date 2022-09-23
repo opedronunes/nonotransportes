@@ -9,6 +9,7 @@ $(document).ready(function(){
         loop:true,
         margin:5,
         autoplay:true,
+        dots: false,
         autoplayTimeout:3000,
         responsive:{
             0:{
@@ -16,6 +17,9 @@ $(document).ready(function(){
             },
             500:{
                 items:5
+            },
+            700:{
+                items: 7
             }
         }
     })

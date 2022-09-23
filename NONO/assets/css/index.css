@@ -205,14 +205,17 @@ RESET BOOTSTRAP
     box-shadow: var(--shadow-dark);
 }
 .card-content{
-    text-align: center;
-    color: var(--color-gray1);
+    color: var(--color-dark);
 }
 #card-service img{
     border-radius: .6rem .6rem 3px 3px;
 }
+.card-content h4{
+    text-align: center;
+    font-size: 1.2rem;
+}
 .card-content p{
-    color: var(--color-gray2);
+    text-align: justify;
 }
 
 .card-body
@@ -376,8 +379,8 @@ section
 iframe
 {
     width: 100%;
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px 1px #8d8d8d;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 1px var(--color-gray);
 }
 
 .btn 
@@ -523,7 +526,7 @@ footer h2
 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px 0;
 }
 
@@ -532,6 +535,7 @@ footer h2
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .qrcode-insta
