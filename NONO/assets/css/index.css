@@ -213,9 +213,10 @@ RESET BOOTSTRAP
 .card-content h4{
     text-align: center;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 .card-content p{
-    text-align: justify;
+    text-align: start;
 }
 
 .card-body
@@ -353,6 +354,7 @@ section
 #equipamentos figure img 
 {
     max-height: 320px;
+    border-radius: 5px;
 }
 
 #equipamentos figcaption 
