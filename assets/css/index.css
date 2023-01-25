@@ -15,6 +15,7 @@ RESET
 :root{
     --shadow-dark: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
     --shadow-gray: 0 2px 15px 0 rgb(141, 141, 141); 
+    --shadow-gray2: 0 2px 15px 0 #313131; 
     --gradient-180: linear-gradient(180deg, #ffe700, #ff5500);
     --gradient-70: linear-gradient(70deg, #ffe700 40%, #ff5500);
     --color-dark: #1c1c1c;
@@ -350,6 +351,22 @@ section
 }
 
 /* EQUIPAMENTS */
+#portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+#portfolio a{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid #313131;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-gray2);
+    font-size: 0.8rem;
+}
 .gradient
 {
     background-image: var(--gradient-180);
