@@ -1,3 +1,8 @@
+<?php
+require "./app/data/Clientes_data.php";
+require "./app/data/Servicos_data.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -115,86 +120,32 @@
     <button onclick="topFunction()" id="btnToTop" title="Go to top">
       <i class="fas fa-long-arrow-alt-up"></i>
     </button>
-    <!-- LOGO CLIENTS -->
+    <!-- LOGO CLIENTS era 586 linhas -->
     <section class="client">
       <div class="container">
         <h2>Parceiros</h2>
         <div id="client" class="owl-carousel owl-theme">
-          <div><img src="/content/images/CLIENT-LOGO/ma3-200x140.jpg" alt="Logo Ma3"></div>
-          <div><img src="/content/images/CLIENT-LOGO/rusch-200x140.jpg" alt="Logo Rusch"></div>
-          <div><img src="/content/images/CLIENT-LOGO/polimix-200x140.jpg" alt="Logo Polimix"></div>
-          <div><img src="/content/images/CLIENT-LOGO/votorantim-200x140.jpg" alt="Logo Votorantim"></div>
-          <div><img src="/content/images/CLIENT-LOGO/mrv 200x140.jpg" alt="Logo MRV engenharia"></div>
-          <div><img src="/content/images/CLIENT-LOGO/brasif-200x140.jpg" alt="Logo Brasif"></div>
-          <div><img src="/content/images/CLIENT-LOGO/bsbrental-200x140.jpg" alt="Logo BSBrental"></div>
-          <div><img src="/content/images/CLIENT-LOGO/casteloforte-200x140.jpg" alt="Logo Castelo Forte"></div>
-          <div><img src="/content/images/CLIENT-LOGO/ciplan-200x140.jpg" alt="Logo Ciplan"></div>
-          <div><img src="/content/images/CLIENT-LOGO/concrecon-200x140.png" alt="Logo Concrecon"></div>
-          <div><img src="/content/images/CLIENT-LOGO/feijaozinho-200x140.jpg" alt="Logo Feijãozinho"></div>
-          <div><img src="/content/images/CLIENT-LOGO/fundex-200x140.jpg" alt="Logo fundex"></div>
-          <div><img src="/content/images/CLIENT-LOGO/geo_entulhos-200x140.jpg" alt="Logo Geo Entulhs"></div>
-          <div><img src="/content/images/CLIENT-LOGO/megarental-200x140.jpg" alt="Logo Mega Rental"></div>
-          <div><img src="/content/images/CLIENT-LOGO/rental_max-200x140.jpg" alt="Logo Rental Max"></div>
-          <div><img src="/content/images/CLIENT-LOGO/solotrat-200x140.jpg" alt="Logo Solotrat"></div>
-          <div><img src="/content/images/CLIENT-LOGO/sonda_engenharia-200x140.jpg" alt="Logo Sonda Engenharia"></div>
-          <div><img src="/content/images/CLIENT-LOGO/transdata-200x140.jpg" alt="Logo Transdata"></div>
+          <?php foreach($clientes as $cliente) { ?>
+            <div <?= $cliente['id'] ?>>
+              <img src="<?=$cliente['img']?>" alt="<?=$cliente['alt']?>">
+            </div>
+          <?php } ?>
         </div>
-      </div>
     </section>
     <!-- SERVIÇOS-->
     <section id="service">
       <div class="container">
         <h2>O que fazemos?</h2>
         <div id="services">
-          <div id="card-service">
-            <img src="/content/images/2021/servico-7.jpg" class="card-img-top" alt="Plataforma e 2544">
-            <div class="card-content">
-              <h4>Locação de caminhões basculante</h4>
-              <p>Transporte retirada de materiais a granel, com descartes em locais autorizados. Normalmente é locado junto com Retroescavadeira ou Pá carregadeira para relizar limpeza de um terreno.</p>
+          <?php foreach($servicos as $servico){ ?>
+            <div id="card-service" <?= $servico['id'] ?>>
+              <img src="<?= $servico['img'] ?>" class="card-img-top" alt="<?= $servico['alt'] ?>">
+              <div class="card-content">
+                <h4><?= $servico['title'] ?></h4>
+                <p><?= $servico['description'] ?></p>
+              </div>
             </div>
-          </div>
-          <div id="card-service">
-            <img src="/content/images/2021/servico-01.jpg" class="card-img-top" alt="Plataforma e 2544">
-            <div class="card-content">
-              <h4>Transporte de máquinas e equipamentos</h4>
-              <p>Transportamos os mais diversos tipos de equipamento e máquinas em todo o território nacional.</p>
-            </div>
-          </div>
-          <div id="card-service">
-            <img src="/content/images/2021/servico-02.jpg" class="card-img-top" alt="Remoção de tanque">
-            <div class="card-content">
-              <h4>Transportes especiais e remoção</h4>
-              <p>Estamos dispostos a novos desafios, atendendo da melhor forma a necessidade dos nossos clientes.</p>
-            </div>
-          </div>
-          <div id="card-service">
-            <img src="/content/images/2021/servico-03.jpg" class="card-img-top" alt="Pá carregadeira">
-            <div class="card-content">
-              <h4>Terraplanagem</h4>
-              <p>Consiste na colocação ou retirada de terra para deixar um terreno plano.</p>
-            </div>
-          </div>
-          <div id="card-service">
-            <img src="/content/images/2021/servico-04.jpg" class="card-img-top" alt="Retroescavadeira">
-            <div class="card-content">
-              <h4>Escavação</h4>
-              <p>Trabalho de remoção ou de desobstrução de terras para alterar um terreno.</p>
-            </div>
-          </div>
-          <div id="card-service">
-            <img src="/content/images/2021/servico-08.jpg" class="card-img-top" alt="Escavadeira demolindo">
-            <div class="card-content">
-              <h4>Aterro e demolição</h4>
-              <p>Nivelação de terreno com colocação ou retirada de materiais. E rompimento de meteriais com rompedores hidráulicos.</p>
-            </div>
-          </div>
-          <div id="card-service">
-            <img src="/content/images/2021/servico-06.jpg" class="card-img-top" alt="Remoção de tanque e guindalto">
-            <div class="card-content">
-              <h4>Içamento de materiais diversos</h4>
-              <p>Atendemos a todo tipo de serviço para içamento e carregamento e transporte de materiais diversos.</p>
-            </div>
-          </div>
+          <?php } ?>
         </div>
       </div>
     </section>
@@ -211,7 +162,7 @@
           <div class="col">
             <h4 class="gradient">Caçambas</h4>
             <p>
-              Para atender a demanda, disponibilizamos caminhões basculantes para rellizar retiradas/transporte de materiais a granel. 
+              Para atender a demanda, disponibilizamos caminhões basculantes para realizar retiradas/transporte de materiais a granel. 
               Com descarte e locais apropriados e autorizados pelos agentes de fiscalização.
             </p>
             <div class="logo-equipaments">

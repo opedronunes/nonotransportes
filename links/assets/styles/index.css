@@ -49,8 +49,8 @@ main::after
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     z-index: 1;
+    padding: 2rem;
 }
 #perfil
 {
@@ -71,6 +71,7 @@ main::after
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    width: 100%;
 }
 #links a
 {
@@ -86,5 +87,11 @@ main::after
     border-bottom: 3px solid #34af23;
 }
 
+.swiper {
+    width: 100%;
+    height: auto;
+}
 
-
+.card {
+    width: 300px;
+}
