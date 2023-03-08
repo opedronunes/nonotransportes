@@ -1,7 +1,11 @@
 <?php
-require "./app/data/Clientes_data.php";
+//require "./app/data/Clientes_data.php";
 require "./app/data/Servicos_data.php";
 require "./app/data/Equipamentos.php";
+
+
+$data = json_decode(file_get_contents("./app/clientes.json"));
+$clientes_data = $data->clientes;
 ?>
 
 <!DOCTYPE html>
@@ -121,14 +125,14 @@ require "./app/data/Equipamentos.php";
     <button onclick="topFunction()" id="btnToTop" title="Go to top">
       <i class="fas fa-long-arrow-alt-up"></i>
     </button>
-    <!-- LOGO CLIENTS eram 586 linhas -->
+    <!--CLIENTES-->
     <section class="client">
       <div class="container">
         <h2>Parceiros</h2>
         <div id="client" class="owl-carousel owl-theme">
-          <?php foreach($clientes as $cliente) { ?>
-            <div <?= $cliente['id'] ?>>
-              <img src="<?=$cliente['img']?>" alt="<?=$cliente['alt']?>">
+          <?php foreach($clientes_data as $c) { ?>
+            <div <?= $c->id ?>>
+              <img src="<?=$c->img?>" alt="<?=$c->alt?>">
             </div>
           <?php } ?>
         </div>
