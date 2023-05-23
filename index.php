@@ -3,7 +3,6 @@
 require "./app/data/Servicos_data.php";
 require "./app/data/Equipamentos.php";
 
-
 $data = json_decode(file_get_contents("./app/clientes.json"));
 $clientes_data = $data->clientes;
 ?>
@@ -63,7 +62,7 @@ $clientes_data = $data->clientes;
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- NAVEGAÇÃO MENU -->
-    <header id="header">
+    <header id="header" class="container">
       <a id="logo" href="index.html">
         <img src="/content/logo&icons/logo.png" alt="Logo Nonô transportes">
       </a>
@@ -125,46 +124,37 @@ $clientes_data = $data->clientes;
     <button onclick="topFunction()" id="btnToTop" title="Go to top">
       <i class="fas fa-long-arrow-alt-up"></i>
     </button>
-    <!--CLIENTES-->
-    <section class="client">
-      <div class="container">
-        <h2>Parceiros</h2>
-        <div id="client" class="owl-carousel owl-theme">
-          <?php foreach($clientes_data as $c) { ?>
-            <div <?= $c->id ?>>
-              <img src="<?=$c->img?>" alt="<?=$c->alt?>">
-            </div>
-          <?php } ?>
-        </div>
-    </section>
-    <!-- SERVIÇOS-->
-    <section id="service">
-      <div class="container">
-        <h2>O que fazemos?</h2>
-        <div id="services">
-          <?php foreach($servicos as $servico){ ?>
-            <div id="card-service" <?= $servico['id'] ?>>
-              <img src="<?= $servico['img'] ?>" class="card-img-top" alt="<?= $servico['alt'] ?>">
-              <div class="card-content">
-                <h4><?= $servico['title'] ?></h4>
-                <p><?= $servico['description'] ?></p>
+    <main class="container">
+      <!--CLIENTES-->
+      <section class="client">
+          <h2>Parceiros</h2>
+          <div id="client" class="owl-carousel owl-theme">
+            <?php foreach($clientes_data as $c) { ?>
+              <div <?= $c->id ?>>
+                <img src="<?=$c->img?>" alt="<?=$c->alt?>">
               </div>
-            </div>
-          <?php } ?>
+            <?php } ?>
+          </div>
+      </section>
+      <!-- SERVIÇOS-->
+      <section id="service">
+        <div class="container">
+          <h2>O que fazemos?</h2>
+          <div id="services">
+            <?php foreach($servicos as $servico){ ?>
+              <div id="card-service" <?= $servico['id'] ?>>
+                <img src="<?= $servico['img'] ?>" class="card-img-top" alt="<?= $servico['alt'] ?>">
+                <div class="card-content">
+                  <h4><?= $servico['title'] ?></h4>
+                  <p class="text-secondary"><?= $servico['description'] ?></p>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!--
-          RELAÇÃO DE MÁQUINAS E EQUIPAMENTOS:
-          CAÇAMBAS
-          RETROESCAVADEIRAS
-          CAMINHÕES MUNCK
-          PLATAFORMAS
-          PRANCHAS
-        -->
-    <section id="equipamentos" >
-      <div class="container">
+      </section>
+      <!--RELAÇÃO DE MÁQUINAS E EQUIPAMENTOS-->
+      <section id="equipamentos" >
         <h2>Portfólio</h2>
         <div id="portfolio">
           <a href="https://drive.google.com/u/0/uc?id=1BD8x7KlAQ5Mq8rwmnDdZcw-MP_taky_f&export=download"><i class="ph-download"></i>Portfólio completo</a>
@@ -192,17 +182,12 @@ $clientes_data = $data->clientes;
               <?php } ?>
             </div>
           <?php } ?>
-        </div>
-      </div>
-    </section>
-    <!-- FORMULÁRIO -->
-    <section id="orcamento">
-      <div class="container">
+      </section>
+      <!-- FORMULÁRIO -->
+      <section id="orcamento">
         <h2>Orçamento</h2>
-        
-          <form class="row" action="/app/Email_send.php" method="post">
-            
-            <h4>Solicite um orçamento!</h4>
+        <form class="row" action="/app/Email_send.php" method="post">  
+          <h4>Solicite um orçamento!</h4>
           <small>OBS.: Os itens com asteríscos são de preenchimento obrigatório.</small>
           <div class="col-md-6">
             <label class="form-label" for="name">Nome e sobrenome: *</label>
@@ -242,45 +227,45 @@ $clientes_data = $data->clientes;
             <!-- name="enviar" -->
           </div>
         </form>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="text-center text-muted">
-      <div class="logo-footer">
-        <img src="/content/logo&icons/nono.png" alt="Logo Nonô">
-      </div>
-      <div class="container">
-        <!-- CONTACTS -->
-        <div id="endereco">
-          <h4>Endereço:</h4>
-          <p>Núcleo rural alexandre Gusmão Gleba 02 CH 195A Brazlândia - DF</p>
-          <p>CEP: 72.701-997</p>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.3843897682245!2d-48.14937308513006!3d-15.730791825584642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33c7ee703e27%3A0xb105d5be90164bb2!2sNon%C3%B4%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1663597462977!5m2!1spt-BR!2sbr" height="400" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="text-center text-muted">
+        <div class="logo-footer">
+          <img src="/content/logo&icons/nono.png" alt="Logo Nonô">
         </div>
-        <div id="contact" class="contact-footer">
-          <div class="row">
-            <div class="col contact-footer-itens">
-              <a target="blank" href="https://wa.me/message/IB4OWSY7HO5XI1"><i class="fab fa-whatsapp"></i> (61)99988-3184</a>
-              <a target="blank" href="https://wa.me/qr/JBHPSM3SNVTRN1"><i class="fab fa-whatsapp"></i> (61)99153-8990</a>
-              <a target="blank" href="https://wa.me/message/QVFKFR6ESFPLH1"><i class="fab fa-whatsapp"></i> (61)3354-7090</a>
-              <a target="blank" href="mailto:nono.transportes@hotmail.com?subject=Orçamento para"><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a>
-            </div>
-            <div class="col qrcode-insta">
-              <a target="blank" href="https://instagram.com/nonotransportes.rental?utm_medium=copy_link"><i class="fab fa-instagram"></i> Siga-nos</a>
-              <img class ="qrcode" src="/content/logo&icons/frame.png" alt="QR code instagram">
+        <div class="container">
+          <!-- CONTACTS -->
+          <div id="endereco">
+            <h4>Endereço:</h4>
+            <p>Núcleo rural alexandre Gusmão Gleba 02 CH 195A Brazlândia - DF</p>
+            <p>CEP: 72.701-997</p>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.3843897682245!2d-48.14937308513006!3d-15.730791825584642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33c7ee703e27%3A0xb105d5be90164bb2!2sNon%C3%B4%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1663597462977!5m2!1spt-BR!2sbr" height="400" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
+          <div id="contact" class="contact-footer">
+            <div class="row">
+              <div class="col contact-footer-itens">
+                <a target="blank" href="https://wa.me/message/IB4OWSY7HO5XI1"><i class="fab fa-whatsapp"></i> (61)99988-3184</a>
+                <a target="blank" href="https://wa.me/qr/JBHPSM3SNVTRN1"><i class="fab fa-whatsapp"></i> (61)99153-8990</a>
+                <a target="blank" href="https://wa.me/message/QVFKFR6ESFPLH1"><i class="fab fa-whatsapp"></i> (61)3354-7090</a>
+                <a target="blank" href="mailto:nono.transportes@hotmail.com?subject=Orçamento para"><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a>
+              </div>
+              <div class="col qrcode-insta">
+                <a target="blank" href="https://instagram.com/nonotransportes.rental?utm_medium=copy_link"><i class="fab fa-instagram"></i> Siga-nos</a>
+                <img class ="qrcode" src="/content/logo&icons/frame.png" alt="QR code instagram">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- REFERENCE -->
-      <div class="footer-reference">
-        <span>
-          &copy;Nonô Transportes e serviços LTDA - CNPJ: 35.226.051/0001-10 | Criation and development <a target="blank" href="https://www.opedronunes.com.br"><img src="/content/logo&icons/logoPN.png" alt="Logo Pedro Nunes-Dev"></a>
-        </span>
-      </div>
-    </footer>
+        <!-- REFERENCE -->
+        <div class="footer-reference">
+          <span>
+            &copy;Nonô Transportes e serviços LTDA - CNPJ: 35.226.051/0001-10 | Criation and development <a target="blank" href="https://www.opedronunes.com.br"><img src="/content/logo&icons/logoPN.png" alt="Logo Pedro Nunes-Dev"></a>
+          </span>
+        </div>
+      </footer>
+    </main>
 
     <script src="/assets/js/bootstrapv5.2.min.js"></script>
     <script src="/assets/js/jquery-3.6.0.min.js"></script>

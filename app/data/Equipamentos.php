@@ -256,6 +256,18 @@ $equipamentos = [
                 "alt" => "Foto de carreta e prancha",
                 "description" => "Volvo FH 540 6X4T"
             ],
+            [
+                "id" => 3,
+                "img" => "/content/images/2021/portfolio/Pranchas/cavalo-007.jpg",
+                "alt" => "Foto de carreta e prancha",
+                "description" => "Volvo FH 540 6X4T"
+            ],
+            [
+                "id" => 4,
+                "img" => "/content/images/2021/portfolio/Pranchas/cavalo-008.jpg",
+                "alt" => "Foto de carreta e prancha",
+                "description" => "Volvo FH 540 6X4T"
+            ],
         ],
     ],
 ];

@@ -22,18 +22,20 @@ RESET
     --color-black: #161923;
     --color-gray2: #313131;
     --color-gray: #8d8d8d;
+    --color-white: #d4d4d4;
     --color-orange: #ff5500;
     --color-yellow: #ffe700;
 }
 
 body{
     background: var(--color-black);
+    color: var(--color-gray);
 }
 
 a 
 {
    text-decoration: none; 
-   color: #fff;
+   color: var(--color-white);
 }
 
 a:hover
@@ -65,7 +67,7 @@ MENU BUTTON
 {
     box-sizing: border-box;
     height: 70px;
-    padding: 1rem;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,20 +205,20 @@ RESET BOOTSTRAP
     grid-gap: 10px;
 }
 #card-service{
-    
     padding: 6px;
     border-radius: 1rem;
-    box-shadow: var(--shadow-dark);
+    border: 1px solid var(--color-gray2);
 }
 .card-content{
-    color: var(--color-gray2);
     text-align: center;
+    padding-top: 1.2rem;
 }
 #card-service img{
     border-radius: .6rem .6rem 3px 3px;
 }
 .card-content h4{
     font-size: 1.2rem;
+    color: var(--color-white);
 }
 .card-content p{
     font-size: 0.9rem;
@@ -272,7 +274,7 @@ h2
     border-image: var(--gradient-70);
     border-image-slice: 1;
     padding: 5px 0;
-
+    color: var(--color-white);
 }
 
 #btnToTop
@@ -316,14 +318,10 @@ section
     padding: 40px 0;
 }
 
-#service, #localizacao{
-    background: #fff;
-}
 
-.client, #equipamentos, footer
+
+.client, #equipamentos, footer, #service
 {
-    
-    color: #fff;
     text-align: justify;
 }
 
@@ -332,6 +330,7 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .client img
@@ -436,32 +435,36 @@ FORM STYLE
 #orcamento
 {
     padding: 10px;
-    color: #fff;
+    color: var(--color-white);
+    /*
     background-image: url(/content/images/2021/retro-001.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    */
 }
 
 form
 {
+    /*
     background: rgba( 22, 25, 35, 0.5 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4.5px );
     -webkit-backdrop-filter: blur( 4.5px );
-    border-radius: 5px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color: #fff;
-    text-shadow: 0 0 2px #1c1c1c;
-    padding: 20px;
+    
     box-shadow: 0 0 2px  #fff;
+    */
+    border-radius: 5px;
+    border: 1px solid var(--color-gray2);
+    padding: 20px;
     max-width: 500px;
+    box-shadow: var(--shadow-gray2);
 }
 
 .form-control
 {
     border: none;
-    border: 1px solid var(--color-orange);
+    border: 1px solid var(--color-gray2);
     background-color: transparent;
     outline: none;
     color: var(--color-orange);
@@ -471,24 +474,30 @@ form
 {
     background-color: transparent;
     box-shadow: 0 0 0;
-    border: 1px solid var(--color-orange);
+    border: 1px solid var(--color-gray2);
     color: var(--color-orange);
+}
+
+select
+{
+    background: transparent;
 }
 .form-select
 {
     border: none;
-    border: 1px solid var(--color-orange);
+    border: 1px solid var(--color-gray2);
     background-color: transparent;
     outline: none;
-    color: var(--color-orange);
+    color: var(--color-gray);
     margin: 0 0 10px 0;
+    background: transparent;
 }
 .form-select:focus
 {
     background-color: transparent;
     box-shadow: 0 0 0;
-    border: 1px solid var(--color-orange);
-    color: var(--color-orange);
+    border: 1px solid var(--color-gray2);
+    color: var(--color-gray);
 }
 .form-label
 {
@@ -496,11 +505,11 @@ form
 }
 .form-control::placeholder
 {
-    color: #ffffffc0;
+    color: var(--color-gray);
     text-shadow: 0 0 2px #1c1c1c;
 }
 /* MESSAGE FORM */
-main
+.mail-message
 {
     height: 100vh;
     background-color: var(--color-black);
@@ -516,13 +525,13 @@ main
 .message
 {
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .message a
 {
     color: var(--color-orange);
-    background: #fff;
+    border: 1px solid var(--color-white);
     padding: 10px;
     border-radius: 5px;
     transition: 0.2s;
@@ -532,12 +541,15 @@ main
 {
     background: var(--gradient-180);
     color: #161923;
+    border: transparent;
 }
 
 /****************
 FOOTER
 ****************/
-
+footer a{
+    color: var(--color-gray);
+}
 footer h2
 {
     background: none;
