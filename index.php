@@ -138,19 +138,17 @@ $clientes_data = $data->clientes;
       </section>
       <!-- SERVIÇOS-->
       <section id="service">
-        <div class="container">
-          <h2>O que fazemos?</h2>
-          <div id="services">
-            <?php foreach($servicos as $servico){ ?>
-              <div id="card-service" <?= $servico['id'] ?>>
-                <img src="<?= $servico['img'] ?>" class="card-img-top" alt="<?= $servico['alt'] ?>">
-                <div class="card-content">
-                  <h4><?= $servico['title'] ?></h4>
-                  <p class="text-secondary"><?= $servico['description'] ?></p>
-                </div>
+        <h2>O que fazemos?</h2>
+        <div id="services">
+          <?php foreach($servicos as $servico){ ?>
+            <div id="card-service" <?= $servico['id'] ?>>
+              <img src="<?= $servico['img'] ?>" class="card-img-top" alt="<?= $servico['alt'] ?>">
+              <div class="card-content">
+                <h4><?= $servico['title'] ?></h4>
+                <p class="text-secondary"><?= $servico['description'] ?></p>
               </div>
-            <?php } ?>
-          </div>
+            </div>
+          <?php } ?>
         </div>
       </section>
       <!--RELAÇÃO DE MÁQUINAS E EQUIPAMENTOS-->
