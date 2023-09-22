@@ -44,6 +44,7 @@ $clientes_data = $data->clientes;
     <title>Nonô Transportes e Serviços</title>
     <meta name="description" content="Nonô transportes, Locação de retroescavadeira, caminhão plataforma, carreta prancha, prancha 03 eixos, prancha 04 eixos, caminhão munck, escavadeira hidráulica.">
     <meta name="abstract" content="Locação equipamentos, transporte de equipamentos, serviços relacionados a construção civil.">
+    <meta name="keywords" content="escavadeira hidraulica, terraplanagem, caçamba de entulho, escavadeira,carregadeira, maquinas, retroescavadeira, munck, caminhão munck, prancha, transportadora, escavação">
     <link rel="canonical" href="https://www.nonotransporteselocacoes.com.br">
     <meta name="robots" content="index, follow">
     <meta name="distribution" content="global">
@@ -119,7 +120,6 @@ $clientes_data = $data->clientes;
         </div>
       </div>
     </div>
-    
     <!-- BUTTON RETURN TO TOP -->
     <button onclick="topFunction()" id="btnToTop" title="Go to top">
       <i class="fas fa-long-arrow-alt-up"></i>
