@@ -241,11 +241,8 @@ $clientes_data = $data->clientes;
       </form>
     </section>
     <!-- FOOTER -->
-    <footer class="text-center text-muted">
-      <div class="logo-footer">
-        <img src="/content/logo&icons/nono.png" alt="Logo Nonô">
-      </div>
-      <div class="container">
+    <footer class="text-center text-muted mt-5">
+      <div class="container py-2">
         <!-- CONTACTS -->
         <div id="endereco">
           <h4>Endereço:</h4>
@@ -255,16 +252,32 @@ $clientes_data = $data->clientes;
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.3843897682245!2d-48.14937308513006!3d-15.730791825584642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33c7ee703e27%3A0xb105d5be90164bb2!2sNon%C3%B4%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1663597462977!5m2!1spt-BR!2sbr" height="400" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-        <div id="contact" class="contact-footer">
+        <div id="contact" class="contact-footer mt-2">
+          <div class="logo-footer">
+            <img src="/content/logo&icons/nono.png" alt="Logo Nonô">
+          </div>
           <div class="row">
-            <div class="col contact-footer-itens">
-              <a target="blank" href="https://wa.me/message/IB4OWSY7HO5XI1"><i class="fab fa-whatsapp"></i> (61)99988-3184</a>
-              <a target="blank" href="https://wa.me/qr/JBHPSM3SNVTRN1"><i class="fab fa-whatsapp"></i> (61)99153-8990</a>
-              <a target="blank" href="https://wa.me/message/QVFKFR6ESFPLH1"><i class="fab fa-whatsapp"></i> (61)3354-7090</a>
-              <a target="blank" href="mailto:nono.transportes@hotmail.com?subject=Orçamento para"><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a>
+            <div class="col contact-footer-itens d-flex flex-column align-items-start justify-content-center">
+              <a class="py-2 d-flex align-items-center gap-2" target="blank" href="https://wa.me/message/IB4OWSY7HO5XI1"><i class="fab fa-whatsapp"></i> (61)99988-3184</a>
+              <a class="py-2 d-flex align-items-center gap-2" target="blank" href="https://wa.me/qr/JBHPSM3SNVTRN1"><i class="fab fa-whatsapp"></i> (61)99153-8990</a>
+              <a class="py-2 d-flex align-items-center gap-2" target="blank" href="https://wa.me/message/QVFKFR6ESFPLH1"><i class="fab fa-whatsapp"></i> (61)3354-7090</a>
+              <a class="py-2 d-flex align-items-center gap-2" target="blank" href="mailto:nono.transportes@hotmail.com?subject=Orçamento para"><i class="far fa-envelope"></i> nono.transportes@hotmail.com</a>
             </div>
-            <div class="col qrcode-insta">
-              <a target="blank" href="https://instagram.com/nonotransportes.rental?utm_medium=copy_link"><i class="fab fa-instagram"></i> Siga-nos</a>
+            <div class="col">
+              <ul class="d-flex flex-column align-items-start justify-content-center h-100" role="menu">
+                <li class="list py-2 active"><a href="index.html">Home</a></li>
+                <!-- SERVICES -->
+                <li class="list py-2"><a href="#service">Serviços</a></li>
+                <!-- EQUIPAMENTS -->
+                <li class="list py-2"><a href="#equipamentos">Equipamentos</a></li>
+                <!-- BUDGET -->
+                <li class="list py-2"><a href="#orcamento">Orçamento</a></li>
+                <!-- CONTACTS -->
+                <li class="list py-2"><a href="#contact">Contato</a></li>
+              </ul>
+            </div>
+            <div class="col d-flex flex-column align-items-md-start justify-content-center gap-2 align-items-center w-100">
+              <a class=" d-flex align-items-center gap-2" target="blank" href="https://instagram.com/nonotransportes.rental?utm_medium=copy_link"><i class="fab fa-instagram"></i> Siga-nos</a>
               <img class="qrcode" src="/content/logo&icons/frame.png" alt="QR code instagram">
             </div>
           </div>
