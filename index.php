@@ -195,57 +195,13 @@ $clientes_data = $data->clientes;
           </div>
         <?php } ?>
     </section>
-    <!-- FORMULÁRIO -->
-    <section id="orcamento">
-      <h2>Orçamento</h2>
-      <form class="row" action="/app/Email_send.php" method="post">
-        <h4>Solicite um orçamento!</h4>
-        <small>OBS.: Os itens com asteríscos são de preenchimento obrigatório.</small>
-        <div class="col-md-6">
-          <label class="form-label" for="name">Nome e sobrenome: *</label>
-          <input class="form-control" type="text" name="name" id="name" placeholder="Nome e sobrenome" required>
-        </div>
 
-        <div class="col-12">
-          <label class="form-label" for="email">E-mail: *</label>
-          <input class="form-control" type="email" name="email" id="email" placeholder="ex: example@example.com" required>
-        </div>
-
-        <div class="col-12">
-          <label class="form-label" for="cell">Celular: *</label>
-          <input class="form-control" type="tel" name="phone" id="cell" placeholder="(00) 0 0000-0000" required>
-        </div>
-
-        <div class="col-12">
-          <label class="form-label" for="option">Orçamento para: *</label>
-          <select class="form-select" name="subject" id="option" required>
-            <option value="Locação mensal">Locação mensal de equipamentos</option>
-            <option value="Diária">Locação diária</option>
-            <option value="Retroescacadeira">Locação de retroescavadeira</option>
-            <option value="Transporte">Locação de caminhão plataforma ou prancha para transporte</option>
-            <option value="Munck">Locação de munck</option>
-            <option value="Guindaste">Locação de guindastes</option>
-            <option value="Remoção">Equipe de remoção</option>
-            <option value="Outros">Outros</option>
-          </select>
-        </div>
-        <div class="col-12">
-          <label class="form-label" for="description">Descreva o que precisa:</label>
-          <textarea class="form-control" name="message" id="description"></textarea>
-        </div>
-        <!-- <input type="text" name="honeypot" style="display: none;"> -->
-        <div>
-          <button id="envio" class="btn" type="submit">Solicitar orçamento</button>
-          <!-- name="enviar" -->
-        </div>
-      </form>
-    </section>
     <!-- FOOTER -->
     <footer class="text-center text-muted mt-5">
       <div class="container py-2">
         <!-- CONTACTS -->
         <div id="endereco">
-          <h4>Endereço:</h4>
+          <h2>Endereço:</h2>
           <p>Núcleo rural alexandre Gusmão Gleba 02 CH 195A Brazlândia - DF</p>
           <p>CEP: 72.701-997</p>
           <div class="map">
